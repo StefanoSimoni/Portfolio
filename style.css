@@ -50,15 +50,15 @@ html {
 
 .about-me-content {
     background-color: white;
+    height: 150px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: stretch;
 }
 
-.about-me-content > h1, .about-me-content > p, .about-me-content > div {
-    
+.about-me-content > p {
+    font-size: 1.12vw;
 }
 
 .about-me-img > img {
