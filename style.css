@@ -1,3 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
 html {
     background: url(5651992.png);
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-top: 30px;
+}
+
+.about-me-img {
+    position: relative;
+}
+
+.about-me-img > p{
+    position: absolute;
+    top: 170px;
+    left: 32px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    font-weight: bold;
+}
+
+.about-me-content {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.about-me-content > h1, .about-me-content > p, .about-me-content > div {
+    
+}
+
+.about-me-img > img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
 }
