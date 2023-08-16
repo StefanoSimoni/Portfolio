@@ -10,10 +10,11 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 html {
-    background: url(5651992.png);
+    /*background: url(5651992.png);*/
 }
 
 .title {
@@ -36,9 +37,18 @@ html {
 
 .about-me-img {
     position: relative;
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 8px black;
 }
 
-.about-me-img > p{
+.about-me-img > img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.about-me-img > p {
     position: absolute;
     top: 170px;
     left: 32px;
@@ -55,14 +65,70 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 15px 15px 0 15px;
+    box-shadow: 1px 1px 8px black;
+}
+
+.about-me-content > h1 {
+    font-size: 25px;
 }
 
 .about-me-content > p {
-    font-size: 1.12vw;
+    font-size: 10px;
 }
 
-.about-me-img > img {
-    object-fit: cover;
-    width: 200px;
-    height: 200px;
+.about-me-content > h1, .about-me-content > p, .about-me-content > .about-me-links {
+    margin-bottom: 15px;
+}
+
+.about-me-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.my-work {
+    margin-top: 100px;
+    width: 90%;
+}
+
+.my-work > h1 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 43px;
+}
+
+.work {
+    background-color: white;
+    box-shadow: 0.5px 0.5px 5px black;
+}
+
+.work > img {
+    width: 100%;
+    height: 325px;
+}
+
+.work-text {
+    padding: 5px 15px 40px 15px;
+}
+
+.work-text > p {
+    font-size: 15px;
+}
+
+.work-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.work-links {
+    display: flex;
+    gap: 10px;
 }
