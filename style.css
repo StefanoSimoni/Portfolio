@@ -99,7 +99,7 @@ html {
 
 .works {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 43px;
 }
 
@@ -110,15 +110,15 @@ html {
 
 .work > img {
     width: 100%;
-    height: 325px;
+    height: 225px;
 }
 
 .work-text {
-    padding: 5px 15px 40px 15px;
+    padding: 5px 15px 20px 15px;
 }
 
 .work-text > p {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .work-title {
