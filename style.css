@@ -60,7 +60,6 @@ html {
 
 .about-me-content {
     background-color: white;
-    height: 150px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -74,7 +73,7 @@ html {
 }
 
 .about-me-content > p {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .about-me-content > h1, .about-me-content > p, .about-me-content > .about-me-links {
@@ -85,6 +84,11 @@ html {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    font-size: 25px;
+}
+
+.about-me-links a {
+    color: black;
 }
 
 .my-work {
@@ -99,7 +103,7 @@ html {
 
 .works {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 43px;
 }
 
@@ -110,7 +114,7 @@ html {
 
 .work > img {
     width: 100%;
-    height: 225px;
+    height: 250px;
 }
 
 .work-text {
@@ -131,4 +135,51 @@ html {
 .work-links {
     display: flex;
     gap: 10px;
+    font-size: 20px;
+}
+
+.work-links a {
+    color: black;
+}
+
+.contact-me {
+    width: 100%;
+    background-color: rgb(34, 34, 126);
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-me-content {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me-text {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 20px;
+    color: white;
+}
+
+.contact-me-text > h1 {
+    font-size: 25px;
+}
+
+.contact-me-text > div {
+    display: flex;
+    gap: 10px;
+}
+
+.tel > i, .email > i {
+    font-size: 20px;
+}
+
+.contact-me-links {
+    font-size: 30px;
+}
+
+.contact-me-links a {
+    color: white;
 }
